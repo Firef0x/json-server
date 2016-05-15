@@ -1,0 +1,8 @@
+JsonServer:
+  image: firef0x/json-server:latest
+  ports:
+    - "3003:3003"
+  volumes:
+      - /srv/docker/json-server/db:/opt/json-server/db
+      - /srv/docker/json-server/log:/opt/json-server/log
+  restart: always
